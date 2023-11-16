@@ -1,0 +1,35 @@
+/*
+ * Keypad_cfg.h
+ *
+ * Created: 10/21/2023 3:23:51 PM
+ *  Author: sharb
+ */ 
+
+
+#ifndef KEYPAD_CFG_H_
+#define KEYPAD_CFG_H_
+
+
+
+#define ROWS_NUMBER              4
+#define COLS_NUMBER              4
+
+// IMPORTANT : YOU NEED TO CONFIGURE ROWS PINS AS OUTPUT HIGH IN PORT_CFG.H
+
+#define KEYPAD_ROW_0_PIN      DIO_PORTC_PIN5
+#define KEYPAD_ROW_1_PIN      DIO_PORTC_PIN4
+#define KEYPAD_ROW_2_PIN      DIO_PORTC_PIN3
+#define KEYPAD_ROW_3_PIN      DIO_PORTC_PIN2  
+
+
+
+// IMPORTANT : YOU NEED TO CONFIGURE COLS PINS AS INPUT_PULLUP IN PORT_CFG.H
+
+#define KEYPAD_COL_0_PIN      DIO_PORTD_PIN7
+#define KEYPAD_COL_1_PIN      DIO_PORTD_PIN6
+#define KEYPAD_COL_2_PIN      DIO_PORTD_PIN5
+#define KEYPAD_COL_3_PIN      DIO_PORTD_PIN3      
+
+
+
+#endif /* KEYPAD_CFG_H_ */

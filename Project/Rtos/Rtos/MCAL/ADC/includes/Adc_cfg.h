@@ -1,0 +1,72 @@
+/*
+ * Adc_cfg.h
+ *
+ * Created: 10/23/2023 3:52:10 AM
+ *  Author: sharb
+ */ 
+
+
+#ifndef ADC_CFG_H_
+#define ADC_CFG_H_
+
+
+/*
+    Reference selection options:
+	
+	1-AREF_PIN_REF
+	2-INTERNAL_VCC_5V_REF
+	3-INTERNAL_2_56V_REF
+
+*/
+
+#define REFRENCE_SELECTION   INTERNAL_VCC_5V_REF
+
+/*
+    Interrupt selection options:
+	
+	1-ADC_INTERRUPT_ENABLE
+	2-ADC_INTERRUPT_DISABLE
+
+*/
+
+#define ADC_INTERRUPT_STATUS   ADC_INTERRUPT_ENABLE
+
+
+/*
+	OPTIONS:
+	
+	1-LEFT_ADJUST
+	2-RIGHT_ADJUST
+
+*/
+
+#define ADC_Adjust_Result  RIGHT_ADJUST
+
+
+/*
+	OPTIONS:
+	
+	1-DIVISION_FACTOR_2    
+	2-DIVISION_FACTOR_4    
+	3-DIVISION_FACTOR_8    
+	4-DIVISION_FACTOR_16   
+	5-DIVISION_FACTOR_32   
+	6-DIVISION_FACTOR_64   
+	7-DIVISION_FACTOR_128  
+
+*/ 
+
+#define ADC_PRESCALER_SELECTION    DIVISION_FACTOR_2
+
+
+/*
+	OPTIONS :
+	
+	1-AUTO_TRIGGER_ENABLE
+	2-AUTO_TRIGGER_DISABLE
+*/
+
+#define ADC_AUTO_TRIGGER    AUTO_TRIGGER_DISABLE
+
+
+#endif /* ADC_CFG_H_ */
